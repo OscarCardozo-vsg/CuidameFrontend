@@ -1,0 +1,75 @@
+@import './mixins.scss';
+
+main{
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  .mainDiv {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+
+    .perritoContainer{
+      @include flex-center();
+      justify-content: center;
+      flex-direction: column;
+
+      .perrito{
+        height: 300px;
+        width: 250px;
+        mask-image: linear-gradient(180deg, rgb(202, 226, 238) 75%, rgba(0, 0, 0, 0) 100%);
+      }
+
+      .tuMascota{
+        height: 300px;
+        border-radius: 15px;
+        mask-image: linear-gradient(180deg, rgb(202, 226, 238) 30%, rgba(0, 0, 0, 0) 100%);
+      }
+    }
+
+    .inputDiv{
+      margin-bottom: 16px;
+    }
+
+    .bottomPart{
+      @include flex-center();
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      .imagen{
+        @include flex-center();
+        margin-left: 15px;
+        height: 160px;
+        width: 40%;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 5px;
+        border: 1px solid #59595966;
+
+        .imgPreview{
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+        }
+      }
+
+      .imagen:hover{
+        border: 1px solid black;
+      }
+
+      .descripcion{
+        width: 60%;
+
+        .MuiInputBase-root {
+          height: 160px;
+        }
+      }
+    }
+  }
+}

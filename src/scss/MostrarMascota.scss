@@ -1,0 +1,26 @@
+.mainSec{
+  display: flex;
+  justify-content: center;
+
+  .cardExtremos{
+    background-color: #255088;
+    color: #c8daef;
+
+    span{ font-weight: bolder; }
+    svg{ color: #c8daef; }
+  }
+
+  .cardContent{
+    background-color: #5f96d1;
+
+    p{
+      font-size: medium;
+      color: #c8daef;
+    }
+  }
+
+  .cardCollapse{
+    background-color: #20395a;
+    color: #c8daef;
+  }
+}
